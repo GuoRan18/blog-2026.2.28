@@ -40,7 +40,7 @@
 
     const lsPath = LS.get("memos-access-path");
     const lsToken = LS.get("memos-access-token");
-    const baseMemos = (lsPath || 'https://memos.koobai.com').replace(/\/?$/, '/');
+    const baseMemos = (lsPath || 'https://m.010316.xyz:2025/').replace(/\/?$/, '/');
 
     const CONFIG = {
         memos: baseMemos,
