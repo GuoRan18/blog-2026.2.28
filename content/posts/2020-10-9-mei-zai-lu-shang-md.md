@@ -4,8 +4,8 @@ date: 2020-10-09 16:25:50
 categories: ["zine"] 
 tags: [日常]
 
-hideInList: false
-isTop: false
+
+
 ---
 今天是国庆长假后的第一个工作日，早上赶上班前先去了趟燃气公司，把今年的燃气费给交上。
 

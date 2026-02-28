@@ -4,8 +4,8 @@ date: 2020-03-23
 tags: [折腾]
 categories: ["toss"] 
 
-hideInList: false
-isTop: false
+
+
 ---
 
 我平时写文章时是先在typora写完然后上传到cloudstudio中，这样本地和云端都会保存一份，可以确保万无一失。
