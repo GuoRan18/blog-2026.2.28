@@ -1,0 +1,33 @@
+{{ define "body_classes" }}page-about{{ end }}
+{{- define "main" }}
+<div class="pagetitle">
+  这里是我小天地，用来记录生活。对我个人而言，如果一件事没有记录，那这件事终将在记忆中被遗忘，进而找不到他存在的任何证据。我在这里写下的文字，是我存在的最好的证明。
+</div>
+
+<div class="about-img">
+  {{/* alt 留空是合理的，因为 JS 会动态填充，或者纯装饰 */}}
+  <img src="" class="img-hide" alt="" />
+  <div class="about-img-text">Hello</div>
+  <div class="about-img-intro"></div>
+</div>
+
+<div class="about-text">
+🕴平民百姓，何足挂齿。
+
+</div>
+<div class="about-text">
+我喜欢网络，喜欢未知的东西。
+</div>
+<div class="about-text">
+就像这个网站的出现，没有目的，只有兴趣。
+</div>
+<div class="about-text">
+涉足网络十多年， 接触了许多新的东西，认识了一些朋友。
+</div>
+<div class="about-text">
+
+</div>
+
+
+<script src="/js/about-photo.js?v=20260131" defer></script>
+{{- end }}
