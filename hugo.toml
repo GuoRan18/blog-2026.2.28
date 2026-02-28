@@ -1,6 +1,6 @@
-baseURL = "https://koobai.com/" # 建议末尾带上斜杠，避免部分相对路径拼接问题
+baseURL = "https://qiongl/" # 建议末尾带上斜杠，避免部分相对路径拼接问题
 languageCode = "zh-cn"
-title = "空白Koobai"
+title = "北海轻歌"
 theme = "jingzhe_2"
 
 enableRobotsTXT = true
