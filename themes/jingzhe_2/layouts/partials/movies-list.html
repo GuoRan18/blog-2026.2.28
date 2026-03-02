@@ -31,7 +31,7 @@
       {{ $fileName := path.Base . }}           
       {{ $ext := path.Ext $fileName }}         
       {{ $fileId := strings.TrimSuffix $ext $fileName }} 
-      {{ $yingshiimg = printf "https://img.koobai.com/douban/%s.webp" $fileId }}
+      {{ $yingshiimg = printf "https://dou.img.lithub.cc/movie/%s.jpg" $fileId }}
     {{ end }}
     
     {{ $rating := int $ratingRaw | default 0 }}
