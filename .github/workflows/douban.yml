@@ -15,7 +15,7 @@ jobs:
     - name: movie
       uses: lizheming/doumark-action@master
       with:
-        id: jnnsu
+        id: qq40171204
         type: movie
         format: csv
         dir: ./assets

@@ -55,12 +55,6 @@ hasCJKLanguage = true
   weight = 5
   params = { umami_event = "Sports" }
   
-  [[menu.main]]
-    identifier = "Goods"
-    name = "店铺"
-    url = "https://qiszy.taobao.com"
-    weight = 6
-    params = { new_window = true, umami_event = "Taobao" }
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
