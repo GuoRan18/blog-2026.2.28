@@ -18,8 +18,8 @@ hasCJKLanguage = true
 [params]
   # Artalk 评论系统配置
   [params.artalk]
-    server = "https://artalk.010316.xyz:2025"
-    site = "北海轻歌"
+    server = "https://c.koobai.com"
+    site = "Koobai 空白生活"
 
 # [内容渲染与处理] - 核心优化部分
 [markup]
@@ -55,12 +55,12 @@ hasCJKLanguage = true
   weight = 5
   params = { umami_event = "Sports" }
   
+  [[menu.main]]
+    identifier = "Goods"
+    name = "店铺"
+    url = "https://qiszy.taobao.com"
+    weight = 6
+    params = { new_window = true, umami_event = "Taobao" }
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
-
-
-[server]
-[[server.mounts]]
-source = "/artalk-proxy/**"
-target = "https://artalk.010316.xyz:2025/api/v2/**"

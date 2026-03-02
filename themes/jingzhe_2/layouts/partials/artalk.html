@@ -6,12 +6,11 @@
 
 <script>
   Artalk.init({
-    el: '#Comments',
-    pageKey: window.location.pathname,  // 自动获取当前路径
-    pageTitle: document.title,         // 自动获取页面标题
-    server: 'https://artalk.010316.xyz:2025',
-    site: '北海轻歌',
-    useProxy: true,                    // 启用代理解决CORS
-    proxy: '/artalk-proxy/'            // 代理路径
+    el:        '#Comments',
+    pageKey:   '{{ .Permalink }}',
+    pageTitle: '{{ .Title }}',
+    server:    '{{ $.Site.Params.artalk.server }}',
+    site:      '{{ $.Site.Params.artalk.site }}',
+    // ...你的其他配置
   })
 </script>
