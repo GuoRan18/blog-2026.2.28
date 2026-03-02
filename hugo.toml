@@ -18,7 +18,7 @@ hasCJKLanguage = true
 [params]
   # Artalk 评论系统配置
   [params.artalk]
-    server = "https://artalk.010316.xyz:2025/"
+    server = "https://artalk.010316.xyz:2025"
     site = "北海轻歌"
 
 # [内容渲染与处理] - 核心优化部分
