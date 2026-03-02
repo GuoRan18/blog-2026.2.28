@@ -9,7 +9,7 @@
     el:        '#Comments',
     pageKey:   '{{ .Permalink }}',
     pageTitle: '{{ .Title }}',
-    server:    'https://artalk.010316.xyz:2025',
+    server:    '{{ $.Site.Params.artalk.server }}',
     site:      '{{ $.Site.Params.artalk.site }}',
     // ...你的其他配置
   })
