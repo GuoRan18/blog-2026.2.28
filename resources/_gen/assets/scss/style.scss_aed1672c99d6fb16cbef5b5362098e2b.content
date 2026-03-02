@@ -2731,7 +2731,7 @@ blockquote p {
   font-family: 'JetBrainsMono';
   font-display: swap;
   font-weight: 400;
-  src: local("JetBrains Mono"), local("JetBrainsMono"), url("https://img.koobai.com/fonts/JetBrainsMono-Regular.woff2") format("woff2");
+  src: local("JetBrains Mono"), local("JetBrainsMono"), url("https://img.010316.xyz///usr/Obsidian/JetBrainsMono-Regular.woff2") format("woff2");
   unicode-range: U+0021-00FF; }
 
 html, body {

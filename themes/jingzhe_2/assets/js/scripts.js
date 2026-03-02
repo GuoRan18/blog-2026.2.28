@@ -98,3 +98,22 @@ document.body.addEventListener('click', function(e) {
         }
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  if (document.getElementById('Comments')) {
+    const isLocal = window.location.hostname.includes('localhost');
+    
+    Artalk.init({
+      el: '#Comments',
+      pageKey: window.location.pathname,
+      pageTitle: document.title,
+      server: isLocal ? 'http://localhost:2025' : 'https://artalk.010316.xyz:2025',
+      site: '北海轻歌',
+      ...(!isLocal && {
+        useProxy: true,
+        proxy: '/artalk-proxy/'
+      }),
+      darkMode: document.documentElement.classList.contains('dark')
+    });
+  }
+});

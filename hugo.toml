@@ -58,3 +58,9 @@ hasCJKLanguage = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+
+[server]
+[[server.mounts]]
+source = "/artalk-proxy/**"
+target = "https://artalk.010316.xyz:2025/api/v2/**"
