@@ -267,7 +267,7 @@
         });
         target.classList.toggle('hidden');
         if (!target.classList.contains('hidden')) {
-            Artalk.init({ el: `#memo_${id}`, pageKey: `/memos/${id}`, server: 'https://artalk.010316.xyz:2025//', site: '北海轻歌', darkMode: 'auto' });
+            Artalk.init({ el: `#memo_${id}`, pageKey: `/memos/${id}`, server: 'https://artalk.010316.xyz:2025/', site: '北海轻歌', darkMode: 'auto' });
         }
     }
 
