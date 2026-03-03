@@ -85,7 +85,7 @@ document.body.addEventListener('click', function(e) {
     const target = e.target.closest('.atk-comment-wrap a');
     
     // 确保是站外链接
-    if (target && !target.href.includes('koobai.com')) {
+    if (target && !target.href.includes('qiongl.com')) {
         e.preventDefault();
         
         try {
