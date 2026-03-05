@@ -1356,6 +1356,105 @@ html[data-theme='dark'] .apptitle a {
   html[data-theme='dark'] .single-tag-c a {
     color: var(--erji-color); }
 
+/* 分类页面样式 */
+.page-terms .terms-title, .page-terms .taxonomy-title, .page-taxonomy .terms-title, .page-taxonomy .taxonomy-title {
+  font-family: var(--font-family-title);
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  text-align: center; }
+
+.page-terms .terms-list, .page-taxonomy .terms-list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .page-terms .terms-list .term-item, .page-taxonomy .terms-list .term-item {
+    margin-bottom: 15px; }
+    .page-terms .terms-list .term-item .term-link, .page-taxonomy .terms-list .term-item .term-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-decoration: none;
+      color: var(--text-content-color);
+      padding: 15px 20px;
+      background: var(--element-background-color);
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      border: 1px solid var(--frame-color); }
+      .page-terms .terms-list .term-item .term-link:hover, .page-taxonomy .terms-list .term-item .term-link:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-color: var(--primary); }
+      .page-terms .terms-list .term-item .term-link .term-name, .page-taxonomy .terms-list .term-item .term-link .term-name {
+        font-family: var(--font-family-title);
+        font-size: 1.1rem;
+        font-weight: 500; }
+      .page-terms .terms-list .term-item .term-link .term-count, .page-taxonomy .terms-list .term-item .term-link .term-count {
+        background: var(--primary);
+        color: white;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.85rem;
+        font-weight: bold; }
+    @media (prefers-color-scheme: dark) {
+      html:not([data-theme='light']) .page-terms .terms-list .term-item .term-link, html:not([data-theme='light']) .page-taxonomy .terms-list .term-item .term-link {
+        background: var(--background-dark-color);
+        border-color: var(--frame-dark-color); }
+        html:not([data-theme='light']) .page-terms .terms-list .term-item .term-link:hover, html:not([data-theme='light']) .page-taxonomy .terms-list .term-item .term-link:hover {
+          border-color: var(--primary); } }
+    html[data-theme='dark'] .page-terms .terms-list .term-item .term-link, html[data-theme='dark'] .page-taxonomy .terms-list .term-item .term-link {
+      background: var(--background-dark-color);
+      border-color: var(--frame-dark-color); }
+      html[data-theme='dark'] .page-terms .terms-list .term-item .term-link:hover, html[data-theme='dark'] .page-taxonomy .terms-list .term-item .term-link:hover {
+        border-color: var(--primary); }
+
+.page-terms .taxonomy-content, .page-taxonomy .taxonomy-content {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: var(--element-background-color);
+  border-radius: 12px;
+  border: 1px solid var(--frame-color); }
+  @media (prefers-color-scheme: dark) {
+    html:not([data-theme='light']) .page-terms .taxonomy-content, html:not([data-theme='light']) .page-taxonomy .taxonomy-content {
+      background: var(--background-dark-color);
+      border-color: var(--frame-dark-color); } }
+  html[data-theme='dark'] .page-terms .taxonomy-content, html[data-theme='dark'] .page-taxonomy .taxonomy-content {
+    background: var(--background-dark-color);
+    border-color: var(--frame-dark-color); }
+
+/* 分页样式 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+  padding: 20px 0; }
+  .pagination .pagination-prev,
+  .pagination .pagination-next {
+    padding: 8px 16px;
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem; }
+    .pagination .pagination-prev:hover,
+    .pagination .pagination-next:hover {
+      background: var(--primary-hover);
+      transform: translateY(-1px); }
+  .pagination .pagination-info {
+    color: var(--sanji-color);
+    font-size: 0.85rem; }
+    @media (prefers-color-scheme: dark) {
+      html:not([data-theme='light']) .pagination .pagination-info {
+        color: var(--erji-color); } }
+    html[data-theme='dark'] .pagination .pagination-info {
+      color: var(--erji-color); }
+
 .movie-quanju {
   display: grid;
   grid-gap: 10px; }

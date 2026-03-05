@@ -67,3 +67,121 @@
     color: var(--erji-color);
   }
 }
+
+/* 分类页面样式 */
+.page-terms, .page-taxonomy {
+  .terms-title, .taxonomy-title {
+    font-family: var(--font-family-title);
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .terms-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    .term-item {
+      margin-bottom: 15px;
+      
+      .term-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+        color: var(--text-content-color);
+        padding: 15px 20px;
+        background: var(--element-background-color);
+        border-radius: 12px;
+        transition: all 0.3s ease;
+        border: 1px solid var(--frame-color);
+        
+        &:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          border-color: var(--primary);
+        }
+        
+        .term-name {
+          font-family: var(--font-family-title);
+          font-size: 1.1rem;
+          font-weight: 500;
+        }
+        
+        .term-count {
+          background: var(--primary);
+          color: white;
+          border-radius: 50%;
+          width: 32px;
+          height: 32px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 0.85rem;
+          font-weight: bold;
+        }
+      }
+      
+      // 暗黑模式
+      @include dark {
+        .term-link {
+          background: var(--background-dark-color);
+          border-color: var(--frame-dark-color);
+          
+          &:hover {
+            border-color: var(--primary);
+          }
+        }
+      }
+    }
+  }
+  
+  .taxonomy-content {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: var(--element-background-color);
+    border-radius: 12px;
+    border: 1px solid var(--frame-color);
+    
+    @include dark {
+      background: var(--background-dark-color);
+      border-color: var(--frame-dark-color);
+    }
+  }
+}
+
+/* 分页样式 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+  padding: 20px 0;
+  
+  .pagination-prev,
+  .pagination-next {
+    padding: 8px 16px;
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    
+    &:hover {
+      background: var(--primary-hover);
+      transform: translateY(-1px);
+    }
+  }
+  
+  .pagination-info {
+    color: var(--sanji-color);
+    font-size: 0.85rem;
+    
+    @include dark {
+      color: var(--erji-color);
+    }
+  }
+}
